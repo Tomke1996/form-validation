@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Log In</h1>
+        </div>
+        <section id="content1">
+            <form id="sign-in" class="sign-in">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="logEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="logPassword" required>
+                </div>
+                <button type="submit" id="logBtn">Submit</button>
+            </form>
+            <span class="redirection">Not a user?<span> Sign Up</span></span>
+        </section>
+        <section id="content2" hidden>
+            <form id="sign-up" claas="sign-up">
+                <div class="input-group">
+                    <label for="name" class="input-label">Full Name</label>
+                    <input type="text" name="name" class="input" id="name" minlength="3" maxlength="49" required>
+                </div>
+                <div class="input-group">
+                    <label for="email" class="input-label">Email Address</label>
+                    <input type="email" name="email" id="email" class="input" required>
+                </div>
+                <div class="input-group">
+                    <label for="password1" class="input-label">Create Password</label>
+                    <input type="password" class="input" name="password" id="password1" placeholder="Min 8. characters" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please include at least 1 uppercase character, 1 lowercase character and 1 number." required>
+                </div>
+                <div class="input-group">
+                    <label for="password2" class="input-label">Confirm Password</label>
+                    <input type="password" class="input" name="password2" id="password2" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="message-container">
+                <h3 class="message">Don't Hesitate</h3>
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
