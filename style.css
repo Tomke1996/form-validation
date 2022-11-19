@@ -19,10 +19,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1617704716344-8d987ac681a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+/*     background-image: url('https://images.unsplash.com/photo-1617704716344-8d987ac681a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    background: rgb(138,79,79);
+    background: linear-gradient(137deg, rgba(138,79,79,1) 0%, rgba(64,87,133,1) 100%);
 }
 
 .container {
@@ -103,6 +105,7 @@ body {
   #content1 button:hover {
     color: var(--secondary-color);
     background: black;
+    transition: all 0.4s;
   }
 
   #content2 .message-container {
